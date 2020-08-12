@@ -34,7 +34,7 @@ def test1():
     
     tax(test_data, bands, rates)
 
-time0 = timeit(test0, number=10)
-time1 = timeit(test1, number=10)
+time0 = timeit(test0, number=100)
+time1 = timeit(test1, number=100)
 speed_percent_change = (time1 - time0) / time0
 print(f'NumPy method changes time taken by {speed_percent_change * 100:.2f}%.')
